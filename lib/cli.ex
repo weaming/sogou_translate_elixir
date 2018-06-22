@@ -16,7 +16,7 @@ defmodule SogouTranslate.CLI do
 
     IO.puts "  #{green("From")}: #{js["translate"]["from"]}"
     IO.puts "    #{green("To")}: #{js["translate"]["to"]}"
-    IO.puts "  #{green("Text")}: #{text}"
+    IO.puts "  #{green("Text")}: #{js["translate"]["text"]}"
     IO.puts "#{green("Result")}: #{js["translate"]["dit"]}"
   end
 end

@@ -1,6 +1,6 @@
 # SogouTranslate
 
-**TODO: Add description**
+Translate using Sogou translate API
 
 ## Installation
 
