@@ -9,6 +9,18 @@ defmodule SogouTranslate.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       escript: escript(),
+      build_embedded: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
+      package: package(),
+    ]
+  end
+
+  defp package do
+    [
+      description: "Translation CLI tools using translate.sogou.com API",
+      licenses: ["MIT"],
+      maintainers: ["weaming"],
+      links: %{"Github": "https://github.com/weaming/sogou_translate_elixir"}
     ]
   end
 
